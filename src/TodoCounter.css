@@ -1,0 +1,40 @@
+:root{
+    --k:0;
+}
+
+.todoCounter-title {
+    font-size: 2.2rem;
+    color: transparent;
+    background: radial-gradient(circle, rgb(246, 81, 152) 0%, rgb(90, 158, 235) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-top: 10px;
+    animation: backgroundSlide 5s linear infinite;
+    text-transform: uppercase;
+}
+
+.todoCounter-subtitle{
+    font-size:0.9rem;
+    text-align: center;
+    margin:10px;
+}
+
+.todoCounter-subtitle span:nth-child(1){
+    color:green;
+}
+
+.todoCounter-subtitle span:nth-child(2){
+    color:purple;
+}
+
+@keyframes backgroundSlide {
+    from{
+        background-position:0;
+    }
+    to{
+        background-position:200%;
+    }
+}
+

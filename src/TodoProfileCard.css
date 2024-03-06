@@ -1,0 +1,43 @@
+.profileCard-container{
+    display:flex;
+    margin:20px;
+}
+
+img{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    opacity:.9;
+}
+
+.profileCard-container div{
+    padding:5px 10px;
+}
+
+.profileCard-title{
+    font-size:1.1rem;
+    font-weight:700;
+  
+}
+
+.profileCard-name{
+    font-size:1.1rem;
+    color:purple;
+}
+
+.profileCard-container i{
+    font-size:1.2rem;
+    animation:rotate .8s linear;
+}
+
+@keyframes rotate{
+    0%{
+        rotate:-45deg;
+    }
+    50%{
+        rotate:45deg;
+    }
+    100%{
+        rotate:0deg;
+    }
+}
