@@ -4,7 +4,7 @@ function TodoSearch(){
     return(
         <div>
         <input className="todoSearchInput" placeholder="Search..."/>
-        <i className="fa-light fa-magnifying-glass"></i>
+        <i className="fa-solid fa-magnifying-glass"></i>
         </div>
     )
 }

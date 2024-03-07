@@ -1,3 +1,7 @@
+.createTodoContainer{
+    display:none;
+}
+
 .container-input{
     display:flex;
     flex-direction:column;
@@ -19,7 +23,7 @@
     padding:3px 7px;
     border:1px solid lightgrey;
     border-radius:5px;
-    font-size:0.85rem;
+    font-size:0.95rem;
     font-family: "Play", sans-serif;
     outline:none;
     color:purple;
@@ -27,4 +31,11 @@
 
 .createContainer-input:focus{
     border:1px solid purple;
+}
+
+@media (min-width:375px) {
+    .createContainer-input{
+        width:8
+    }
+    
 }

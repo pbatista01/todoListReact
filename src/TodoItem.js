@@ -3,9 +3,8 @@ import "./TodoItem.css"
 function TodoItem(props){
     return(
         <li className="listItem">
-            <span></span>
             <p>{props.text}</p>
-            <span></span>
+            <span><i className="fa-solid fa-check"></i></span>
         </li>
     );
 }

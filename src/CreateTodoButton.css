@@ -9,5 +9,11 @@
     color:white;
     font-family: "Play", sans-serif;
     font-size:0.9rem;
-    box-shadow:1px 1px 2px rgb(66, 66, 66);
+    box-shadow:1px 1px 2px rgba(66, 66, 66, 0.509);
+    transition:all 0.2s ease-in;
+}
+
+.btnCreate:hover{
+    background: rgb(242, 204, 237);
+    color:purple;
 }

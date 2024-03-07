@@ -8,6 +8,7 @@ function TodoProfileCard({name}){
                 <h3 className="profileCard-title">Welcome!<i className="fa-solid fa-hand-peace"></i></h3>
                 <h2 className="profileCard-name">{name}</h2>  
             </div>
+            <span>+</span>
         </div>
     )
 }

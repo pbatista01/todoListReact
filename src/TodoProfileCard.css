@@ -1,11 +1,11 @@
 .profileCard-container{
     display:flex;
-    margin:20px;
+    margin:10px;
 }
 
 img{
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     border-radius:100%;
     opacity:.9;
 }
@@ -15,29 +15,69 @@ img{
 }
 
 .profileCard-title{
-    font-size:1.1rem;
+    font-size:1rem;
     font-weight:700;
   
 }
 
 .profileCard-name{
-    font-size:1.1rem;
+    font-size:1rem;
     color:purple;
 }
 
 .profileCard-container i{
     font-size:1.2rem;
-    animation:rotate .8s linear;
+    animation:rotate .8s infinite;
+}
+
+.profileCard-container span{
+    font-size:3rem;
+    display:inline-block;
+    width:35px;
+    height:35px;
+    background-color: purple;
+    color:white;
+    border-radius:100%;
+    border:none;
+    text-align: center;
+    line-height:30px;
+    position:absolute;
+    top:13%;
+    left:calc(100% - 70px);
+    cursor:pointer;
+}
+
+.profileCard-container span:hover{
+    background-color:rgb(187, 187, 187);
+    color:purple;
 }
 
 @keyframes rotate{
     0%{
         rotate:-45deg;
     }
+    25%{
+        rotate:0deg;
+    }
     50%{
         rotate:45deg;
     }
-    100%{
+    75%{
         rotate:0deg;
+    }
+    100%{
+        rotate:-45deg;
+    }
+}
+
+@media (min-width:375px){
+    .profileCard-container span{  
+        left:calc(100% - 92px);
+    }
+}
+
+@media (min-width:425px){
+    .profileCard-container span{  
+        left:calc(100% - 102px);
     }
 }
